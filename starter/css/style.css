@@ -1,0 +1,93 @@
+/* global font link */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* general Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+html {
+    background: #151a1d;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+}
+
+.main-container {
+    box-sizing: border-box;
+    width: 550px;
+    height: 450px
+  
+}
+
+.header {
+    font-size: 1.2rem;
+    border: solid 2px #ffff;
+    color: #ffff;
+    padding: 5px;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.main-container>.text-area {
+    width: 100%;
+    height: auto;
+    padding: 50px 40px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 0 10px;
+
+
+}
+
+.main-container>.text-area>.para-area {
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.main-container>.text-area>.person {
+    color: red;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.main-container>.text-area>.new-quote {
+    /* button area */
+    border: 1px solid black;   
+    color: black;
+    background-color: aliceblue;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+
+
+}
+
+.animation_cnt{
+    animation-name: count_animation;
+  animation-duration: 10s;
+}
+
+
+@keyframes count_animation {
+    50%   {color: rgb(255, 255, 255);
+           font: bold; }
+   
+  }
